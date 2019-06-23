@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/api/products', require('./controllers/products_get.js'))
-
+app.get('/api/categories', require('./controllers/categories_get.js'))
+app.get('/api/click/:id', require('./controllers/click_get.js'))
 
 app.listen(3000, () => {
 	console.log('Server listening on port 3000');
