@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 	console.log('__dirname', __dirname)
 })
 
-
+app.get('/api/products', require('./controllers/products_get.js'))
 
 
 app.listen(3000, () => {
