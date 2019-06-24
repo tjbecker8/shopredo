@@ -1,7 +1,7 @@
 console.log('script.js is connected');
 
 window.onload = ()=>{
-	axios.get('http://localhost:3000/api/products').then((res) => {
+	axios.get('/api/products').then((res) => {
 		let products = res.data
 		let products_ul = document.getElementById('products')
 		products.forEach((p) => {
@@ -26,7 +26,7 @@ window.onload = ()=>{
 		console.log('err', err)
 	})
 
-	axios.get('http://localhost:3000/api/categories').then((res)=>{
+	axios.get('/api/categories').then((res)=>{
 		let categories = res.data
 		let categories_ul = document.getElementById('categories')
 		categories.forEach((c) => {
@@ -38,7 +38,7 @@ window.onload = ()=>{
 
 	document.addEventListener('click', (e)=> {
 		if (e.target.classList.contains('cat')) {
-			axios.get(`http://localhost:3000/api/click/${e.target.id}`).then((res)=>{
+			axios.get(`/api/click/${e.target.id}`).then((res)=>{
 				let products = res.data
 				let products_ul = document.getElementById('products')
 				products_ul.innerHTML = ''
