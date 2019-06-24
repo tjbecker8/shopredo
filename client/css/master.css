@@ -25,7 +25,7 @@ box-shadow: 0 5px 20px rgba(0,0,0,.15);
 }
 
 .product {
-	background-color: black;
+	background-color: grey;
 	background-image: url();
 	background-size: auto 90%;
 	background-repeat: no-repeat;
@@ -58,8 +58,20 @@ box-shadow: 0 5px 20px rgba(0,0,0,.15);
 .rating {
 	color: white;
 	position: absolute;
-	bottom: 5px;
+	bottom: 10px;
 	right: 20px;
+
+}
+
+.rating span {
+	background-color: red;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+.rating span a {
+	color: black;
+	text-decoration: none;
 }
 
 #sidebar > nav {

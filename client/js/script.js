@@ -17,7 +17,7 @@ window.onload = ()=>{
 					<h3>$ ${p.cost}</h3>
 				</div>
 				<div class="rating">
-					<p>rating</p>
+					<span> <a href="#">buy</a> </span>
 				</div>
 			</div>
 			`)
@@ -55,7 +55,7 @@ window.onload = ()=>{
 							<h3>$ ${p.cost}</h3>
 						</div>
 						<div class="rating">
-							<p>rating</p>
+							<span> <a href="#">buy</a> </span>
 						</div>
 					</div>
 					`)
