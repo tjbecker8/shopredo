@@ -3,7 +3,7 @@ const {Client} = require('pg')
 
 // create a connection to database
 const db = new Client ({
-	connectionString: 'postgres://Bepnm8:@localhost:5432/Shop'
+	connectionString: process.env.DATABASE_URL
 })
 
 //conect to database
