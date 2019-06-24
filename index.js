@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'client')))
 
 app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, '/client/products.html'))
-	console.log('__dirname', __dirname)
+	// console.log('__dirname', __dirname)
 })
 
 app.get('/api/products', require('./controllers/products_get.js'))
